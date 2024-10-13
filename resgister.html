@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-96x96.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexa Login and Register</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family:"Inter Tight", sans-serif;
+        }
+
+        .navshadow{
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        height:70px;
+        position: sticky;
+        top:-5px;
+        z-index:4;
+        overflow:hidden;
+    }
+        
+
+        .login-register-section {
+            background-color: #ffffff;
+            padding: 50px 0;
+        }
+
+        .cardi{
+            background-color: #fff8e1;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: #8bc34a;
+            border: none;
+        }
+
+        .btn-facebook {
+            background-color: #3b5998;
+            color: white;
+            border: none;
+        }
+
+        .btn-google {
+            background-color: #db4437;
+            color: white;
+            border: none;
+        }
+
+        .cardi h2 {
+            color: #333;
+        }
+
+        .cardi a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .cardi a:hover {
+            text-decoration: underline;
+        }
+
+        .form-check-label {
+            margin-left: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navshadow px-5">
+        <div class="container-fluid ">
+        <a class="navbar-brand ps-4 leftlogo"><img src="img\nexa1-removebg-preview.png" width="80"></a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse middlenav ps-5" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto pe-4 navcolor">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+            <!--  <a class="nav-link" aria-current="page" href="#">Pages</a>-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contactus.html">Contact</a>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="collapse navbar-collapse pe-4" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto pe-4 navcolor">
+            <li class="nav-item">
+              <a class="nav-link ms-3" aria-current="page" href="#"><i class="far fa-user"></i>      Log in</a>
+            </li>
+            <li class="nav-item navlinkbtn getstarted">
+              <a class="nav-link  " aria-current="page" href="#">Get Started</a>
+            </li>
+          </ul>
+          
+        </div>
+        </div>
+</nav>
+
+
+
+    <section class="login-register-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="cardi login-cardi p-4">
+                        <h2 class="mb-4">Log In To Your Account</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="loginEmail">Email</label>
+                                <input type="email" class="form-control" id="loginEmail" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Password</label>
+                                <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                            </div>
+                            <div class="form-group form-check d-flex justify-content-between">
+                                <div>
+                                    <input type="checkbox" class="form-check-input" id="keepLoggedIn">
+                                    <label class="form-check-label" for="keepLoggedIn">Keep Me Logged In</label>
+                                </div>
+                                <a href="#">Forgot Your Password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                            <div class="text-center my-3">
+                                <hr class="w-50">
+                                <p>OR</p>
+                                <hr class="w-50">
+                            </div>
+                            <button type="button" class="btn btn-facebook btn-block mb-2">Log In With Facebook</button>
+                            <button type="button" class="btn btn-google btn-block">Log In With Google</button>
+                        </form>
+                        <p class="text-center mt-3">Don't Have An Account? <a href="#">Create</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cardi register-cardi p-4">
+                        <h2 class="mb-4">Create An Account</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="registerName">Name</label>
+                                <input type="text" class="form-control" id="registerName" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerEmail">Email</label>
+                                <input type="email" class="form-control" id="registerEmail" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerPassword">Password</label>
+                                <input type="password" class="form-control" id="registerPassword" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerRepeatPassword">Repeat Password</label>
+                                <input type="password" class="form-control" id="registerRepeatPassword" placeholder="Repeat Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Register Now</button>
+                        </form>
+                        <p class="text-center mt-3">Already Have An Account? <a href="#">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container-fluid footer-area text-light footer mt-0 py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4 ">Our Office</h4>
+                    <p class="mb-2 icons"><i class="fa fa-map-marker-alt me-3"></i>123 Hempsted RoadWay, New York, USA</p>
+                    <p class="mb-2 icons"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2 icons"><i class="fa fa-envelope me-3"></i>nexasolutions@nexasolutions.co.uk</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="www.x.com"><i
+                                class="fab fa-twitter socialmedia"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="www.facebook.com"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="www.youtube.com"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="www.linkedin.com"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Services</h4>
+                    <a class="btn btn-link" href="#">Financial Planning</a>
+                    <a class="btn btn-link" href="#">Cash Investment</a>
+                    <a class="btn btn-link" href="#">Financial Consultancy</a>
+                    <a class="btn btn-link" href="#">Business Loans</a>
+                    <a class="btn btn-link" href="#">Business Analysis</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="#">About Us</a>
+                    <a class="btn btn-link" href="#">Contact Us</a>
+                    <a class="btn btn-link" href="#">Our Services</a>
+                    <a class="btn btn-link" href="#">Terms & Condition</a>
+                    <a class="btn btn-link" href="#">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p>Subscribe to our Newsletter</p>
+                    <div class="position-relative ">
+                        <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn footerbutton py-2 position-absolute top-0 end-0 mt-2 me-2">Sign-Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
